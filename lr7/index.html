@@ -1,0 +1,43 @@
+<div class="container">
+
+    <h1>Сладкая мастерская</h1>
+
+    <p class="subtitle">
+        Онлайн-заказ кондитерской продукции
+    </p>
+
+    <label>Выберите торт:</label>
+
+    <select id="cake">
+        <option value="1200">Наполеон — 1200 ₽</option>
+        <option value="1500">Чизкейк — 1500 ₽</option>
+        <option value="900">Эклеры — 900 ₽</option>
+        <option value="1800">Красный бархат — 1800 ₽</option>
+    </select>
+
+    <label>Количество:</label>
+
+    <input type="number" id="count" min="1" value="1">
+
+    <label>Размер:</label>
+
+    <select id="size">
+        <option value="1">Стандартный</option>
+        <option value="1.5">Большой (+50%)</option>
+        <option value="2">Праздничный (+100%)</option>
+    </select>
+
+    <label>Комментарий:</label>
+
+    <textarea
+        id="comment"
+        placeholder="Введите пожелания">
+    </textarea>
+
+    <button onclick="makeOrder()">
+        Оформить заказ
+    </button>
+
+    <div id="result"></div>
+
+</div>
